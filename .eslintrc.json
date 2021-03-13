@@ -18,7 +18,9 @@
     "sourceType": "module"
   },
   "plugins": [],
-  "rules": {},
+  "rules": {
+    "no-unused-vars": "warn"
+  },
   "settings": {
     "react": {
       "pragma": "React",
