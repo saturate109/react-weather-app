@@ -9,12 +9,12 @@ export const Reducers = (state, action) => {
     case 'SET_WEATHER':
       return { ...state, weather: action.value };
     default:
-      throw new Error();
+      throw new Error('Reducer action type not found');
   }
 };
 
 export const InitialState = {
-  coords: { latitude: null, longitude: null },
+  coords: { longitude: null, latitude: null },
   city: null,
   weather: { description: null },
 };
