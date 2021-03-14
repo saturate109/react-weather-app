@@ -28,7 +28,6 @@ export function useOpenWeather() {
   const { dispatch } = React.useContext(Context);
   const endpoint = 'https://api.openweathermap.org/data/2.5/weather';
   async function getWeatherByCoords(coords) {
-    console.log(process.env);
     const params = {
       appid: process.env.REACT_APP_OPEN_WEATHER_KEY,
       lon: coords.longitude,
