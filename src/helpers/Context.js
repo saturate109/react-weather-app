@@ -8,6 +8,8 @@ export const Reducers = (state, action) => {
       return { ...state, city: action.value };
     case 'SET_WEATHER':
       return { ...state, weather: action.value };
+    case 'SET_ERROR':
+      return { ...state, error: action.value };
     default:
       throw new Error('Reducer action type not found');
   }
@@ -16,7 +18,8 @@ export const Reducers = (state, action) => {
 export const InitialState = {
   coords: { longitude: null, latitude: null },
   city: null,
-  weather: { description: null },
+  weather: null,
+  error: { message: null },
 };
 
 const Context = createContext(null);
