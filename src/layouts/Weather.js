@@ -11,7 +11,7 @@ function Weather() {
       <Context.Provider value={{ state, dispatch }}>
         <LocationButton title="Current Weather" />
         {state.error.message ? (
-          state.error.message
+          <p>{state.error.message}</p>
         ) : (
           <Card
             longitude={state.coords.longitude}
