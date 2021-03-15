@@ -22,5 +22,5 @@ export const InitialState = {
   error: { message: null },
 };
 
-const Context = createContext(null);
+const Context = createContext();
 export default Context;
